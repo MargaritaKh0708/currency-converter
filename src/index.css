@@ -1,0 +1,131 @@
+.select {
+  border-radius: 20px;
+  position: relative;
+  flex-wrap: nowrap;
+  font-size: 10px;
+  height: 30px;
+}
+.select__icon {
+  padding: 0 0 0 10px;
+  height: 15px;
+  width: 15px;
+}
+.select__icon img {
+  max-width: 100%;
+}
+.select__input {
+  text-transform: uppercase;
+  border-radius: 10px;
+  justify-content: center;
+  letter-spacing: 2px;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 12px;
+  transition: 1s;
+  display: flex;
+  width: 100%;
+}
+.select__btn {
+  box-shadow: 4px 5px 5px 0px #d5d2d2;
+  background: #fff;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 0px;
+  transition: 1s;
+  display: flex;
+  border: none;
+  width: 100%;
+  z-index: 3;
+}
+.select__btn:hover {
+  background: #d5d2d2;
+}
+.select__btn:hover .select__input {
+  color: #fff;
+}
+.select__discription {
+  text-transform: uppercase;
+  align-items: center;
+  color: #554f4f;
+  padding: 5px 10px;
+  transition: 1s;
+  display: flex;
+  gap: 5px;
+}
+.select__discription:hover {
+  background: #d5d2d2;
+  letter-spacing: 2px;
+}
+.select__item-description {
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}
+.select__item-input {
+  display: none;
+}
+.select__hidden-list {
+  box-shadow: 4px 5px 5px 0px #d5d2d2;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  position: absolute;
+  padding: 8px 0px;
+  border: 1px solid #d5d2d2;
+  display: none;
+  width: 100%;
+  z-index: 2;
+}
+
+.active {
+  display: flex;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-top: -20px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -20px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+.converter {
+  border-radius: 10px;
+  max-width: 1090px;
+  border: 1px solid #d5d2d2;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+}
+.converter__item {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.converter__item-list {
+  position: relative;
+}
+
+.input-field {
+  border: 1px solid #d5d2d2;
+  border-radius: 6px;
+  outline: none;
+  height: 20px;
+  padding: 4px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,20 @@
+.converter {
+    border-radius: $s-radius;
+    max-width: 1090px;
+    border: $s-border;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        gap: 10px;
+
+        &-list {
+            position: relative;
+        }
+    }
+}

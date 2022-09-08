@@ -3,7 +3,6 @@ import { InputField } from "../input-field/InputField";
 import { useOnClickOutside } from "usehooks-ts";
 import { flags } from "../../flags/flag";
 import { useState, useRef } from "react";
-import dollar from "assets/icons/usd.png";
 
 
 export interface ICurrencyListProps {

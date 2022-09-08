@@ -105,9 +105,9 @@
 }
 .converter {
   border-radius: 10px;
+  margin: 10px auto 0;
   max-width: 1090px;
   border: 1px solid #d5d2d2;
-  margin: 0 auto;
   padding: 10px;
   display: flex;
   gap: 30px;
@@ -128,4 +128,58 @@
   outline: none;
   height: 20px;
   padding: 4px;
+}
+
+.header {
+  border-radius: 10px;
+  max-width: 1090px;
+  border: 1px solid #d5d2d2;
+  margin: 0 auto;
+  padding: 10px;
+}
+.header__current-currency {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header__current-rate {
+  color: #554f4f;
+}
+.header__title {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+}
+.header__subtitle {
+  background: url("https://i.ibb.co/RDTnNrT/animated-text-fill.png") repeat-y;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  font: 700 20px "Oswald", sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+          animation: aitf 80s linear infinite;
+  transform: translate3d(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  padding: 0.25em 0 0.325em;
+  background-clip: text;
+  letter-spacing: 8px;
+  display: block;
+}
+
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }/*# sourceMappingURL=index.css.map */
